@@ -40,7 +40,7 @@ TARGET_KERNEL_SOURCE := kernel/lge/g3
 
 
 # Kernel
-TARGET_KERNEL_CONFIG := d851_defconfig
+#TARGET_KERNEL_CONFIG := d855_defconfig
 
 # Kernel
 #TARGET_KERNEL_CONFIG := cyanogenmod_d855_defconfig

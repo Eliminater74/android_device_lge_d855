@@ -32,7 +32,12 @@ PRODUCT_COPY_FILES += device/lge/d855/fstab.g3:recovery/root/fstab.g3
 PRODUCT_COPY_FILES += device/lge/d855/twrp.fstab:recovery/root/etc/twrp.fstab
 
 
+# Set those variables here to overwrite the inherited values.
+PRODUCT_DEVICE := d855
 PRODUCT_NAME := omni_d855
+PRODUCT_BRAND := LG
+PRODUCT_MODEL := G3
+PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g3" \
