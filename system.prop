@@ -7,3 +7,8 @@ ro.telephony.call_ring.multiple=0
 ro.telephony.default_network=9
 telephony.lteOnCdmaDevice=0
 telephony.lteOnGsmDevice=1
+#
+# OTA Updates
+ro.ota.romname=Pac-Man Rom LP 5.1.X
+ro.ota.version=201505XX
+ro.ota.manifest=https://romhut.com/roms/pac-man-rom-lp-5-1-x/ota.xml

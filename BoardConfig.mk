@@ -25,14 +25,33 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d855/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_d855_defconfig
 TARGET_REQUIRES_BUMP := true
+
+TARGET_PREBUILT_RECOVERY := device/lge/d851/recovery.img
+# Kernel
+#TARGET_KERNEL_CONFIG := cyanogenmod_d855_defconfig
+TARGET_KERNEL_CONFIG := d855_defconfig
+
+# Kernel & ToolChains
+#TARGET_KERNEL_CONFIG := cyanogenmod_d851_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-6.0
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := prebuilts/gcc/linux-x86/arm/arm-linux-gnueabi-4.9/bin/arm-eabi-
+# Rom ToolChains
+TARGET_ROM_CUSTOM_TOOLCHAIN := arm-linux-androideabi-4.9
+#TARGET_GCC_VERSION := 4.8
+#TARGET_TOOLS_PREFIX := prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/bin/arm-linux-androideabi-
+# RR Config Flags
+#TARGET_TC_ROM := SM-4.8
+#TARGET_TC_KERNEL := SM-4.9
+#TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2164260864
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12297699328
+TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
